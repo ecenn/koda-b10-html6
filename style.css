@@ -5,11 +5,12 @@ body {
 }
 
 nav ul {
-text-align: center;
-list-style: none;
-margin: 0;
-padding: 0;
-background-color: whitesmoke;
+    /* text-align: center; */
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
 }
 
 nav ul li {
@@ -17,16 +18,25 @@ nav ul li {
 }
 
 @media (width >= 768px) {
-    nav ul li {
+    /* nav ul li {
         display: inline-block;
+    } */
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
     }
 }
 
 @media (width <= 768px) {
-    nav ul {
+    /* nav ul {
         padding: 5px;
     }
     nav ul li {
         display: list-item;
+    } */
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
 }
