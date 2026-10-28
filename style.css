@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+nav ul {
+text-align: center;
+list-style: none;
+margin: 0;
+padding: 0;
+background-color: whitesmoke;
+}
+
+nav ul li {
+    margin: 20px;
+}
+
+@media (width >= 768px) {
+    nav ul li {
+        display: inline-block;
+    }
+}
+
+@media (width <= 768px) {
+    nav ul {
+        padding: 5px;
+    }
+    nav ul li {
+        display: list-item;
+    }
+}
